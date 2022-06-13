@@ -9,7 +9,7 @@ public class CorretoraSeguros implements Seguravel {
     private int IdadeCondutor;
     private Object CorretoraSeguros;
 
-    Double fazerPropostaSeguro() {
+    Double fazerPropostaSeguro(double valorDaFIPE) {
         if (IdadeCondutor == 18 || IdadeCondutor == 19 || IdadeCondutor == 20 ||IdadeCondutor == 21 ||IdadeCondutor == 22 ||IdadeCondutor == 23 ||IdadeCondutor == 24) {
             CorretoraSeguros + 5,26%;
         }
