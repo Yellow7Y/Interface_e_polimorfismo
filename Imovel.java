@@ -6,5 +6,15 @@ As fórmulas para calcular os valores das apólices são meramente fictícias. C
 as fórmulas são totalmente diferentes e mais complexas.
  */
 public class Imovel implements Seguravel {
+    private int Resultado;
 
+    void obterDescricao() {
+        int ValorDaFipe;
+        int IdadeDoCondutor;
+    }
+
+    void calcularValorApolice() {
+        double fazerPropostaSeguro = Resultado * 12 % + 19.36;
+        return;
+    }
 }
