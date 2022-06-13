@@ -18,10 +18,30 @@ No método main(), instanciamos uma corretora de seguros, um carro e um imóvel,
  */
 
 public class Principal {
-    public static void main(String[] args) {
-        CorretoraSeguros corretoraSeguros = new CorretoraSeguros();
-        corretoraSeguros.fazerPropostaSeguro();
-        Carro carro = new Carro();
 
+    private static double Resultado;
+
+    public static Double main(String[] args) {
+        CorretoraSeguros corretoraSeguros = new CorretoraSeguros();
+        System.out.print("Desejaria fazer um seguro de um carro, ou imóvel?");
+        System.out.println("1 para Carro, e 2 para imóvel");
+        Double seguroInformado = corretoraSeguros.fazerPropostaSeguro();
+        if (corretoraSeguros.equals (1)) {
+            Double ValorDaFipe;
+            ValorDaFipe = seguroInformado;
+            System.out.print("Por favor senhor(a) cliente, informe o valor da FIPE de seu VEÍCULO:");
+            ValorDaFipe = corretoraSeguros.fazerPropostaSeguro();
+            return ValorDaFipe;
+        }
+        else if (corretoraSeguros.equals (2)) {
+            Double ValorDoImovel;
+            ValorDoImovel = seguroInformado;
+            System.out.print("Por favor senhor(a) cliente, informe o valor do seu IMÓVEL:");
+            ValorDoImovel = corretoraSeguros.fazerPropostaSeguro();
+            Resultado = ValorDoImovel / 20;
+            return Resultado;
+        }
+        corretoraSeguros.fazerPropostaSeguro();
+        return seguroInformado;
     }
 }
