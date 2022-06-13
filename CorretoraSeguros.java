@@ -13,10 +13,16 @@ public class CorretoraSeguros implements Seguravel {
         if (IdadeCondutor == 18 || IdadeCondutor == 19 || IdadeCondutor == 20 ||IdadeCondutor == 21 ||IdadeCondutor == 22 ||IdadeCondutor == 23 ||IdadeCondutor == 24) {
             CorretoraSeguros + 5,26%;
         }
-        //   if IdadeCondutor 18 a 24 anos
+        else (IdadeCondutor == 25 || IdadeCondutor == 26 || IdadeCondutor == 27 || IdadeCondutor == 28 || IdadeCondutor == 29 || IdadeCondutor == 30 || IdadeCondutor == 31 ||  IdadeCondutor == 32 ||  IdadeCondutor == 33
+                || IdadeCondutor == 34 || IdadeCondutor == 35 || IdadeCondutor == 36 || IdadeCondutor == 37 || IdadeCondutor == 38 || IdadeCondutor == 39 || IdadeCondutor == 40 || IdadeCondutor == 41 || IdadeCondutor == 42
+                || IdadeCondutor == 43 || IdadeCondutor == 43 || IdadeCondutor == 43 || IdadeCondutor == 44 || IdadeCondutor == 45 || IdadeCondutor == 46 || IdadeCondutor == 47 || IdadeCondutor == 48 || IdadeCondutor == 49
+) {
+            CorretoraSeguros + 5,15%;
+        }
         //   else IdadeCondutor 25 a 49 anos
         //    else IdadeCondutor 50 a 80 anos
         //    else IdadeCondutor 81 a 120 anos não e possivel realizar o seguro.
         return null;
     }
 }
+// int = numero inteiro double números quebrados.
