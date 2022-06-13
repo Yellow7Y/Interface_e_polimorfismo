@@ -11,10 +11,10 @@ public class Principal {
         System.out.print("Desejaria fazer um seguro de um carro, ou imóvel?\n");
         System.out.println("1 para Carro, e 2 para imóvel");
         int carroOuImovel = scanner.nextInt();
-        //Double seguroInformado = corretoraSeguros.fazerPropostaSeguro(valorDaFIPE);
+//      Double seguroInformado = corretoraSeguros.fazerPropostaSeguro(valorDaFIPE);
         if (carroOuImovel == 1 ) {
             Double ValorDaFipe;
-            //ValorDaFipe = seguroInformado;
+//          ValorDaFipe = seguroInformado;
             System.out.print("Por favor senhor(a) cliente, informe o valor da FIPE de seu VEÍCULO:");
             double valorDaFIPE = scanner.nextDouble();
             ValorDaFipe = corretoraSeguros.fazerPropostaSeguro(valorDaFIPE);
