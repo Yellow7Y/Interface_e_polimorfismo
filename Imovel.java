@@ -1,24 +1,20 @@
 package Interface_e_Polimorfismo;
-
 /*
-3. Se Carro diz que implementa a interface Seguravel, ela deve implementar todos os métodos especificados na interface, pois uma interface é um contrato,
-ou seja, a classe deve garantir que faz o que ela pede.
-No código, incluímos os métodos obterDescricao() e calcularValorApolice(), além de dois atributos e um construtor.
-Os atributos são usados pelos métodos para calcular o valor da apólice e retornar a descrição do carro.
+4. Criamos a classe Imovel e implementamos os métodos da interface. Veja que a fórmula do cálculo do seguro é diferente,
+além de essa classe possuir atributos também diferentes.
+As fórmulas para calcular os valores das apólices são meramente fictícias. Claro que, na realidade,
+as fórmulas são totalmente diferentes e mais complexas.
  */
-public class Carro implements Seguravel {
-
+public class Imovel implements Seguravel {
     private int Resultado;
-    private Object CorretoraSeguros;
 
     void obterDescricao() {
         int ValorDaFipe;
         int IdadeDoCondutor;
     }
 
-    double calcularValorApolice() {
+    void calcularValorApolice() {
         double fazerPropostaSeguro = Resultado * 12 % + 19.36;
-        return (double) CorretoraSeguros;
+        return;
     }
-
 }
