@@ -21,7 +21,7 @@ public class Principal {
             Resultado = ValorDaFipe / 20;
         } else if (corretoraSeguros.equals(2)) {
             Double ValorDoImovel;
-            //ValorDoImovel = seguroInformado;
+//          ValorDoImovel = seguroInformado;
             System.out.print("Por favor senhor(a) cliente, informe o valor do seu IMÓVEL:");
             ValorDoImovel = corretoraSeguros.fazerPropostaSeguro(valorDaFIPE);
             Resultado = ValorDoImovel / 20;
