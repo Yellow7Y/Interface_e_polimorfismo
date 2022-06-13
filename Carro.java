@@ -1,21 +1,28 @@
 package Interface_e_Polimorfismo;
-/*
-3. Se Carro diz que implementa a interface Seguravel, ela deve implementar todos os métodos especificados na interface, pois uma interface é um contrato,
-ou seja, a classe deve garantir que faz o que ela pede.
-No código, incluímos os métodos obterDescricao() e calcularValorApolice(), além de dois atributos e um construtor.
-Os atributos são usados pelos métodos para calcular o valor da apólice e retornar a descrição do carro.
- */
-public class  Carro implements Seguravel {
 
-    obterDescricao() {
-        int ValorDaFipe;
-        int IdadeCondutor;
-    }
-    calcularValorApolice() {
-    //    if IdadeCondutor 18 a 25 anos
-    //    else IdadeCondutor 25 a 49 anos
-    //    else IdadeCondutor 50 a 80 anos
-        //    else IdadeCondutor 81 a 120 anos não e possivel realizar o seguro.
+public class Principal {
+    private static double Resultado;
 
+    public static void main(String[] args) {
+        CorretoraSeguros corretoraSeguros = new CorretoraSeguros();
+        System.out.print("Desejaria fazer um seguro de um carro, ou imóvel?\n");
+        System.out.println("1 para Carro, e 2 para imóvel");
+        Double seguroInformado = corretoraSeguros.fazerPropostaSeguro();
+        if (corretoraSeguros.equals(1)) {
+            Double ValorDaFipe;
+            ValorDaFipe = seguroInformado;
+            System.out.print("Por favor senhor(a) cliente, informe o valor da FIPE de seu VEÍCULO:");
+            ValorDaFipe = corretoraSeguros.fazerPropostaSeguro();
+            Resultado = ValorDaFipe / 20;
+        } else if (corretoraSeguros.equals(2)) {
+            Double ValorDoImovel;
+            ValorDoImovel = seguroInformado;
+            System.out.print("Por favor senhor(a) cliente, informe o valor do seu IMÓVEL:");
+            ValorDoImovel = corretoraSeguros.fazerPropostaSeguro();
+            Resultado = ValorDoImovel / 20;
+        }
+        System.out.println("Qual seria a sua IDADE:");
+        Double IdadeDoCliente = corretoraSeguros.fazerPropostaSeguro();
+        corretoraSeguros.fazerPropostaSeguro();
     }
 }
