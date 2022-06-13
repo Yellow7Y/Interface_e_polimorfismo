@@ -1,5 +1,7 @@
 package Interface_e_Polimorfismo;
 
+import java.util.Scanner;
+
 public class Principal {
     private static double Resultado;
 
@@ -12,7 +14,7 @@ public class Principal {
             Double ValorDaFipe;
             ValorDaFipe = seguroInformado;
             System.out.print("Por favor senhor(a) cliente, informe o valor da FIPE de seu VEÍCULO:");
-            ValorDaFipe = corretoraSeguros.fazerPropostaSeguro();
+            Scanner scanner = new Scanner(System.in);
             Resultado = ValorDaFipe / 20;
         } else if (corretoraSeguros.equals(2)) {
             Double ValorDoImovel;
